@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Jõulukaart</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script src='js/snowfall.jquery.js'></script>
+</head>
+
+<body>
+<div id="message">
+  <p class="text1"> Soovime Teile rahulikku ja meeldivat jõuluaega.</p>
+  <p class="text2"><em>Mõnusaid Pühi soovivad Rajur ja Tanel</em></p>
+
+</div>
+</div>
+
+</body>
+<script type='text/javascript'> 
+	
+$(document).ready(function(){
+			
+$(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:10,  flakeCount : 400});
+
+});
+
+ </script>
+</html>
