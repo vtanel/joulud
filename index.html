@@ -9,25 +9,39 @@
 </head>
 
 <body>
+<label >
+    Amount of snowflakes:
+    <select id='howmany'>
+        <option value='70'>70</option>
+        <option value='10'>10</option>
+        <option value='20'>20</option>
+        <option value='50'>50</option>
+        <option value='100'>100</option>
+    </select>
+</label>
+</div>
 <div id="message">
   <p class="text1"> Soovime Teile rahulikku ja meeldivat jõuluaega.</p>
   <p class="text2"><em>Mõnusaid Pühi soovivad Rajur ja Tanel</em></p>
-    <div class="" >
+   <div id="pildid" >
+
         <img id="taust" src="jouludtaust.png" alt="">
-        <script type='text/javascript'>
 
-            $(document).ready(function(){
+        <img id="aken" src="jouluaken.png" alt="">
 
-                $(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:10,  flakeCount : 400});
+   </div>
 
-            });
-
-        </script>
-        <img id="aken" src="jouludaken.png" alt="">
-
-    </div>
 </div>
 </body>
+<script type='text/javascript'>
+    (function ($) {
+        $('#howmany').change(function(){
+            el=document.getElementById('pildid');
+            snow(el,this.value);
+        });
+
+    })(jQuery);
+</script>
 
 
 
