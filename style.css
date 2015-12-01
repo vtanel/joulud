@@ -2,13 +2,22 @@
 /* CSS Document */
 
 body {
-	margin:0;
-	padding:0;
-	background:url(../images/xmas_tree.jpg);
-	background-size:100%;
+	margin:0 auto;
+
+
 }
-
-
+#taust{
+	position: absolute;
+	z-index: -1;
+	margin-left: auto;
+	margin-right: auto;
+}
+#aken{
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 #message
 {

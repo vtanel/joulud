@@ -3,27 +3,32 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Jõulukaart</title>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery-latest.min.js"></script>
-<script src='js/snowfall.jquery.js'></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src='snowfall.jquery.js'></script>
 </head>
 
 <body>
 <div id="message">
   <p class="text1"> Soovime Teile rahulikku ja meeldivat jõuluaega.</p>
   <p class="text2"><em>Mõnusaid Pühi soovivad Rajur ja Tanel</em></p>
+    <div class="" >
+        <img id="taust" src="jouludtaust.png" alt="">
+        <script type='text/javascript'>
 
-</div>
-</div>
+            $(document).ready(function(){
 
+                $(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:10,  flakeCount : 400});
+
+            });
+
+        </script>
+        <img id="aken" src="jouludaken.png" alt="">
+
+    </div>
+</div>
 </body>
-<script type='text/javascript'> 
-	
-$(document).ready(function(){
-			
-$(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:10,  flakeCount : 400});
 
-});
 
- </script>
+
 </html>

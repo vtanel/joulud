@@ -3,7 +3,7 @@
 		var	defaults = {
 				flakeCount : 35,
 				flakeColor : '#ffffff',
-				flakeIndex: 999999,
+				flakeIndex: 1,
 				minSize : 1,
 				maxSize : 2,
 				minSpeed : 1,
@@ -153,7 +153,7 @@
 
 							if(bounds.top-collectionHeight > 0){									
 								document.body.appendChild(canvas);
-								canvas.style.position = 'absolute';
+								canvas.style.position = 'relative';
 								canvas.height = collectionHeight;
 								canvas.width = bounds.width;
 								canvas.style.left = bounds.left + 'px';
