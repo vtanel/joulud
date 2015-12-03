@@ -2,30 +2,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Jõulukaart</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+<title>Beautiful Christmas Santa Snow Falling Greetings with html5 css3 and jquery</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script src='js/snowfall.jquery.js'></script>
 </head>
 
-<body>
+<div>
 
+  <div class="wrapper">
+    <script type='text/javascript'>
+
+    $(document).ready(function(){
+
+      $(document).snowfall({deviceorientation : true, round : true, minSize: 1, maxSize:8,  flakeCount : 250});
+
+    });
+
+  </script>
+    <div class="taust" id="message">
+  <p class="text1"> May the joy and peace of Christmas be with you all through the Year. Wishing you a season of blessings.</p>
+  <p class="text2"><em>Merry Christmas</em> by <a href="http://www.web3canvas.com/" target="_blank">Mobiiliringlus.ee</a></p>
 </div>
-<div id="message">
-  <p class="text1"> Soovime Teile rahulikku ja meeldivat jõuluaega.</p>
-  <p class="text2"><em>Mõnusaid Pühi soovivad Rajur ja Tanel</em></p>
-   <div id="pildid" >
-
-        <img id="taust" src="jouludtaust.png" alt="">
-
-        <img id="aken" src="jouluaken.png" alt="">
-
-   </div>
 </div>
+<div id="header">
+
+  </div>
+</div>
+</div>
+
 </body>
-
-
-
-
 
 </html>
